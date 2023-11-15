@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="node_modules/fhirclient/fhir-client.js"></script>
+    <script>
+      FHIR.oauth2.authorize({
+        "client_id": "19f2216b-cfd4-4d57-bbc3-7068d1a66da5",
+        "scope"    : "openid fhirUser launch patient/*.rs user/*.cruds",
+        "redirect_uri" : "http://127.0.0.1:9090"
+      });
+    </script>
+  </head>
+  <body>Loading...</body>
+</html>
